@@ -9,7 +9,13 @@ let curElm;
 
 while (i < shoppingList.length) {
     curElm = shoppingList[i];
-    listString += `<li>${curElm}</li>`;
+    listString += ` 
+    <ul class="list-group">
+        <li class="list-group-item bg-dark text-white p-3 fs-3">
+             <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+             <label class="form-check-label " for="firstCheckbox">${curElm}</label>
+        </li>
+     `;
     i++;
 }
 
